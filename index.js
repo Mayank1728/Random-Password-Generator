@@ -47,7 +47,7 @@ function returnPassword() {
 //     navigator.clipboard.writeText(content);
 // })
 
-document.querySelectorAll("pass").forEach (item => {
+document.querySelectorAll(".pass").forEach (item => {
     item.addEventListener("click",function() {
         let content = item.textContent;
         navigator.clipboard.writeText(content);
