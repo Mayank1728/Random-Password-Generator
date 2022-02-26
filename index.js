@@ -39,3 +39,17 @@ function returnPassword() {
         }
     return password;
 }
+
+//Click to copy functionality
+// const firstpass = document.getElementById("pass1")
+// firstpass.addEventListener("click", function() {
+//     let content = firstpass.textContent
+//     navigator.clipboard.writeText(content);
+// })
+
+document.querySelectorAll("pass").forEach (item => {
+    item.addEventListener("click",function() {
+        let content = item.textContent;
+        navigator.clipboard.writeText(content);
+    })
+})
