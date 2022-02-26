@@ -17,11 +17,12 @@ generateBtn.addEventListener("click", function() {
     }
 })
 
-// Random function to get values between 0- 3 [0,26)
+// Random function to get values between 0- 3 
 function randomGroup() {
     return Math.floor(Math.random() * 4);
 }
 
+// Random function to get values between 0- 25
 function randomIndex() {
     let sizeOfGroup = groups[groupIndex].length;
     let number = Math.floor(Math.random() * sizeOfGroup);

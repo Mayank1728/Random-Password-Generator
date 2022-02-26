@@ -75,7 +75,7 @@ section {
     margin-top: 2.3em;
 }
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .container {
         margin-top: 10em;
         width: 90%;
