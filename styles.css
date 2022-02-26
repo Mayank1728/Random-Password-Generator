@@ -10,7 +10,7 @@ body {
 /* also apply border radius to container */
 .container {
     padding: 10em 1.2em 1.2em 2em;
-    border: 2px solid white;
+    border: 5px solid white;
     max-width: 600px;
     color: #fff;
     background-color: #202B3C;
