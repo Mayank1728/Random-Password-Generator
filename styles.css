@@ -75,4 +75,10 @@ section {
     margin-top: 2.3em;
 }
 
+@media (max-width: 500px) {
+    .container {
+        margin-top: 10em;
+    }
+}
+
 
