@@ -31,14 +31,14 @@ body {
 }
 
 .quote {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-top: 0;
     margin-bottom: 1.5em;
     color: #D5D4D8
 }
 
 /* add logo to the btn */
-.btn {
+#btn {
     color: #fff;
     background: #10b981;
     text-decoration: none;
@@ -60,9 +60,11 @@ section {
     justify-content: space-between;
 }
 
+/* I have height here see here if u run in problems */
 .pass {
     font-size: 1.5em;
     width: 46%;
+    height: 1em;
     padding: .5em 0;
     background: #273549;
     border-radius: 5px;
