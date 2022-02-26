@@ -78,6 +78,7 @@ section {
 @media only screen and (max-width: 500px) {
     .container {
         margin-top: 10em;
+        width: 90%;
     }
 }
 
