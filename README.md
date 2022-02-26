@@ -1,5 +1,5 @@
 # Random-Password-Generator
-Project 6: This is a strong password generator. <br>
+Project 5: This is a strong password generator. <br>
 Netlify: https://kind-mirzakhani-ab0264.netlify.app/ <br>
 Functionality to add <br>
 1- Allow user to change password length (draggger functionality) <br>
