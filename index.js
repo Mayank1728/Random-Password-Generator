@@ -2,14 +2,15 @@ const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const lowercase = 'abcdefghijklmnopqrstuvwxyz';
 const numbers = '0123456789';
 const symbols = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~';
-// I am considering uppercase as group 1, lowercase as group 2 and so on...
-const allChars = [uppercase, lowercase, numbers, symbols];
-const passwords = document.getElementsByClassName("pass");
 
+// I am considering uppercase characters as group 1, lowercase as group 2 and so on...
+const groups = [uppercase, lowercase, numbers, symbols];
+const passwords = document.getElementsByClassName("pass"); 
 const generateBtn = document.querySelector("#btn");
 let size = 15;
-let group = 0;
+let groupIndex = 0;
 let charIndex = 0;
+
 generateBtn.addEventListener("click", function() {
     for(let i = 0; i < 4; i++) {
         passwords[i].textContent = returnPassword();
@@ -20,8 +21,9 @@ generateBtn.addEventListener("click", function() {
 function randomGroup() {
     return Math.floor(Math.random() * 4);
 }
+
 function randomIndex() {
-    let sizeOfGroup = allChars[group].length;
+    let sizeOfGroup = groups[groupIndex].length;
     let number = Math.floor(Math.random() * sizeOfGroup);
     return number;
 }
@@ -30,9 +32,9 @@ function returnPassword() {
     let password = "";
     for(let j = 0; j < size; j++)
         {
-            group = randomGroup();
+            groupIndex = randomGroup();
             charIndex = randomIndex();
-            password += allChars[group][charIndex];
+            password += groups[groupIndex][charIndex];
         }
     return password;
 }
