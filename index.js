@@ -40,16 +40,15 @@ function returnPassword() {
     return password;
 }
 
-
 document.querySelectorAll(".pass").forEach (item => {
     item.addEventListener("click",function() {
         let content = item.textContent;
         navigator.clipboard.writeText(content);
         //to highlight as soon as the user clicks on the password
-        item.style = "border: 3px solid yellow";
+        item.style = "border: 5px solid white";
         //after 2000 milliSeconds the stopHighLighting function is called and yellow border disappears 
         setTimeout(function stopHighLighting() {
-            item.style = "border: 0px solid yellow";
+            item.style = "border: 0px solid white";
         }, 2000)
     })
 })
