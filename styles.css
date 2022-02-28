@@ -81,7 +81,7 @@ section {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 100px) and (orientation: portrait)  {
     .container {
         background: purple;
     }
