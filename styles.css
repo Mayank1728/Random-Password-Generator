@@ -76,13 +76,7 @@ section {
 }
 
 @media (max-width: 675px) {
-    body {
-        width: 90%;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    
 }
 
 
